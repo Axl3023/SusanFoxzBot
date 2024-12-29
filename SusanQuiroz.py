@@ -98,10 +98,10 @@ async def logUserBot():
                                 # Manejar cualquier otro error
                                 await client.send_message("@SpamSusan", f'<b>Error enviando a {i["group_name"]}: {error}</b>', parse_mode="HTML")
 
-                        await asyncio.sleep(10)
+                        await asyncio.sleep(5)
                         if j == 1: break
             await client.send_message("@SpamSusan", f'<b>RONDA ACABADA</b>', parse_mode="HTML")
-            await asyncio.sleep(500) 
+            await asyncio.sleep(300) 
         except:
             pass
 
